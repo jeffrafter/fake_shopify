@@ -1,0 +1,255 @@
+/*
+
+The font softwares linked herebelow are the property of Swiss Typefaces sarl and
+Milieu Grotesque. You may not download the font software for use outside of this
+website.
+
+Purchase and licensing information is available at http://www.swisstypefaces.com/
+licensing/copyright (c) Swiss Typefaces sarl and
+http://www.milieugrotesque.com/typefaces/maison_neue/ (c) Milieu Grotesque,
+Gassner & Colby
+
+*/
+
+/*
+
+  @font-face declarations for the following web fonts.
+
+  MaisonNeueWEB-Light.woff
+  MaisonNeueWEB-LightItalic.woff
+  MaisonNeueWEB-Book.woff
+  MaisonNeueWEB-BookItalic.woff
+  MaisonNeueWEB-Medium.woff
+  MaisonNeueWEB-MediumItalic.woff
+  MaisonNeueWEB-Demi.woff
+  MaisonNeueWEB-DemiItalic.woff
+  MaisonNeueWEB-Bold.woff
+  MaisonNeueWEB-BoldItalic.woff
+  MaisonNeueWEB-Mono.woff
+  MaisonNeueWEB-MonoItalic.woff
+
+  SuisseWorks-Regular-WebS.woff
+  SuisseWorks-RegularItalic-WebS.woff
+  SuisseWorks-Book-WebS.woff
+  SuisseWorks-BookItalic-WebS.woff
+  SuisseWorks-Medium-WebS.woff
+  SuisseWorks-MediumItalic-WebS.woff
+  SuisseWorks-Bold-WebS.woff
+  SuisseWorks-BoldItalic-WebS.woff
+
+  SuisseWorks-Regular-WebXL.woff
+  SuisseWorks-RegularItalic-WebXL.woff
+  SuisseWorks-Book-WebXL.woff
+  SuisseWorks-BookItalic-WebXL.woff
+  SuisseWorks-Medium-WebXL.woff
+  SuisseWorks-MediumItalic-WebXL.woff
+  SuisseWorks-Bold-WebXL.woff
+  SuisseWorks-BoldItalic-WebXL.woff
+*/
+
+/* MaisonNeue */
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-Light.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-LightItalic.woff) format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-Book.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-BookItalic.woff) format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-Medium.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-MediumItalic.woff) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-Demi.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-DemiItalic.woff) format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url(/assets/shopify-assets/MaisonNeueWEB-BoldItalic.woff) format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* SuisseWorks */
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Regular-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Regular-WebS.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-RegularItalic-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-RegularItalic-WebS.woff) format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Book-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Book-WebS.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-BookItalic-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-BookItalic-WebS.woff) format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Medium-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Medium-WebS.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-MediumItalic-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-MediumItalic-WebS.woff) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Bold-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Bold-WebS.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-BoldItalic-WebS.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-BoldItalic-WebS.woff) format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* SuisseWorks XL */
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Regular-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Regular-WebXL.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-RegularItalic-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-RegularItalic-WebXL.woff) format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Book-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Book-WebXL.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-BookItalic-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-BookItalic-WebXL.woff) format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Medium-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Medium-WebXL.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-MediumItalic-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-MediumItalic-WebXL.woff) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-Bold-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-Bold-WebXL.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(/assets/shopify-assets/SuisseWorks-BoldItalic-WebXL.woff2) format('woff2'),
+       url(/assets/shopify-assets/SuisseWorks-BoldItalic-WebXL.woff) format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+

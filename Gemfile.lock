@@ -359,6 +359,7 @@ DEPENDENCIES
   foreman
   fuubar
   guard-rspec
+  hashie
   jquery-rails
   liquid
   monetize

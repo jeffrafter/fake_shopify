@@ -1,0 +1,1237 @@
+$width: 1900px;
+$header: 146px;
+$serif: 'SuisseWorks', Georgia, Times, Times New Roman, serif;
+$sans: 'MaisonNeue', Courier, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+@mixin transition($transition:0.1s all) {
+  -webkit-transition: #{$transition};
+  -moz-transition: #{$transition};
+  -o-transition: #{$transition};
+  transition: #{$transition};
+}
+
+/**************************************************
+ * Typography
+ * ************************************************/
+$lightblue: #f0f4f7;
+$black: #000;
+$white: #fff;
+$red: #e32b34;
+$blue: #3d5aa4;
+$stroke: #E6E6E6;
+
+h1.typography {
+  font-family: $serif;
+  font-weight: bold;
+  font-size: 72px;
+  letter-spacing: -0.025em;
+}
+
+h2.typography {
+  font-family: $sans;
+  font-weight: bold;
+  font-size: 85px;
+  border-bottom: 5px solid black;
+}
+
+h3.typography {
+  font-family: $sans;
+  font-weight: bold;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: -0.075em;
+  border-bottom: 4px solid black;
+}
+
+h4.typography {
+  font-family: $sans;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+h5.typography {
+  font-family: $serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: -0.025em;
+}
+
+blockquote.typography {
+  font-family: $serif;
+  font-style: italic;
+  font-weight: 300; /* Book */
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+}
+
+.header.typography {
+  font-family: $serif;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -0.025em;
+}
+
+.blog.typography {
+  font-family: $serif;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -0.025em;
+}
+
+p.p1.typography {
+  font-family: $serif;
+  font-weight: 300; /* Book */
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: -0.025em;
+}
+
+p.p2.typography {
+  font-family: $serif;
+  font-weight: 300; /* Book */
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: -0.025em;
+}
+
+p.p3.typography {
+  font-family: $serif;
+  font-weight: 300; /* Book */
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+}
+
+p.p4.typography {
+  font-family: $sans;
+  font-weight: 400; /* Medium */
+  font-size: 21px;
+  line-height: 32px;
+}
+
+p.p5.typography {
+  font-family: $sans;
+  font-weight: 300; /* Book */
+  font-size: 18px;
+  line-height: 28px;
+}
+
+p.p6.typography {
+  font-family: $sans;
+  font-weight: 300; /* Book */
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.static.btn {
+  border: 2px solid transparent;
+  border-radius: 0;
+  background: #000;
+  color: white;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.static.btn:hover {
+  border: 2px solid black;
+  border-radius: 0;
+  background: none;
+  color: black;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.blog.static.btn {
+  border: 2px solid #265aa4;
+  border-radius: 0;
+  background: none;
+  color: #265aa4;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+}
+
+.blog.static.btn:hover {
+  border: 2px solid transparent;
+  border-radius: 0;
+  background: #265aa4;
+  color: white;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+}
+
+/* COLORS document in the PSD */
+
+$gray-black: rgb(61,53,56);
+$gray-light: rgb(237,233,233);
+$gray-medium: rgb(214,208,210);
+$gray-dark: rgb(153,149,150);
+
+$iceblue: rgb(211,229,245);
+$iceblue-light: rgb(230,234,237);
+$iceblue-medium: rgb(167,181,188);
+$iceblue-dark: rgb(98,109,112);
+
+$brightred: #E72F2F; /* rgb(231,47,47) */
+$accentblue: #2157A5; /* rgb(33,87,165) */
+
+/* Actual colors????? */
+
+$actualbackground: #EFF5F8;
+$actualred: #f94242; /* rgb(249,66,66) */
+$actualborder: #eff3f7; /* rgb(239,243,247) */
+$actualgraylink: #999999; /* rgb(153,153,153) */
+$actualgrayline: #E6E6E6; /* rgb(230,230,230) */
+
+$background: $actualbackground;
+$graylink: #9f9f9f;
+$red: #FA4440;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $background;
+  /* Margin bottom by footer height */
+  margin-bottom: 190px;
+  padding-top: $header;
+  font-family: $sans;
+  padding: 25px;
+  color: #000;
+}
+
+.container.no-padding {
+  padding: 0;
+}
+
+.container {
+  width:  100%;
+  max-width: 1900px;
+  padding: 0;
+}
+
+/**************************************************
+ * Nav
+ * ************************************************/
+.nav-spacer {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  background: $background;
+  z-index: 2;
+}
+
+.navbar-container {
+  background-color: #fff;
+  padding: 5px 50px 20px 50px;
+}
+
+.navbar-default.navbar-fixed-top.sticky .navbar-container {
+  background: none;
+}
+
+.navbar-default.navbar-fixed-top.sticky {
+  display: none;
+  background: $background;
+  position: fixed;
+  padding-left: 25px;
+  padding-right: 25px;
+  top: -50px;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-default {
+  background: $background;
+  width: inherit;
+  margin: 0 auto;
+  border: 0;
+  .navbar-nav>li>a {
+    padding-left: 0;
+  }
+  .navbar-account {
+    position: relative;
+  }
+  .navbar-account .strikethrough {
+    position: absolute;
+    width: 100%;
+    top: 24px;
+    left: 0;
+    border-top: 1px solid $stroke;
+    z-index: 0;
+  }
+  .navbar-account ul {
+    background-color: #fff;
+  }
+  .navbar-account>.navbar-nav {
+    background: #fff;
+  }
+  .navbar-account>.navbar-nav>li>a {
+    color: $graylink;
+    font-family: $sans;
+    font-size: 14px;
+  }
+
+  .navbar-header {
+    float: none;
+    text-align: center;
+    position: relative;
+  }
+  .navbar-header h1 {
+    position: absolute;
+    left: 0;
+    top: -24px;
+    width: 100%;
+  }
+  .navbar-brand {
+    float: none;
+    text-align: center;
+    color: black;
+  }
+  .navbar-brand>img {
+    display: inline-block;
+    height: 37px;
+  }
+
+  .navbar-nav>li  {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-nav>li:first-child  {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  .navbar-nav>li:last-child  {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+
+  .navbar-nav>li>a {
+    color: black;
+    font-family: $sans;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  .cart {
+    background-image: url(/assets/shopify-assets/bag.svg);
+    background-repeat: no-repeat;
+    background-position: 0 15px;
+    background-size: 16px 16px;
+    padding-left: 22px !important;
+  }
+
+  .cart.full {
+    background-image: url(/assets/shopify-assets/bag-full.svg);
+  }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background: none;
+  color: $red;
+  text-decoration: none;
+}
+
+.nav-item-link {
+  text-transform: uppercase;
+}
+
+#breadcrumbs {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+
+  a {
+    color: $gray-medium;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  span.sep {
+    padding: 0 12px;
+  }
+}
+
+/**************************************************
+ * Footer
+ * ************************************************/
+
+.footer {
+  background: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 190px;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+.footer .container {
+  padding: 40px 60px;
+}
+
+.footer h3 {
+  text-align: left !important;
+}
+
+.footer .right {
+  text-align: right;
+
+  p {
+    margin-bottom: 4px;
+  }
+
+  #email-input {
+    padding: 16px;
+    margin-right: -1px;
+    min-width: 200px;
+  }
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+
+  li {
+    display: block;
+    margin: 6px 0 0 0;
+    padding: 0;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.footer .palm {
+  text-align: center;
+  margin-top: -15px;
+
+  img {
+    width: 45px;
+    height: 37px;
+  }
+}
+
+.footer .bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.footer .bottom .footer-nav li {
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 16px;
+}
+
+
+/**************************************************
+ * Social
+ * ************************************************/
+
+.social-links {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  text-align:left;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  display: inline-block;
+  border-radius: 22px;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+  color: black;
+}
+
+.fallback-text {
+  display: none;
+}
+
+.inline {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**************************************************
+ * Homepage
+ * ************************************************/
+@media screen and (min-width: 1900px) {
+  body.template-index {
+    #hero {
+      h2 {
+        font-size: 94px !important;
+      }
+    }
+  }
+}
+
+body.template-index {
+  #hero {
+    background-image: url("/assets/shopify-assets/home-hero.jpg");
+    background-size: cover;
+    position: relative;
+
+    h2 {
+      margin-top: 13%;
+      text-align: center;
+      font-family: $serif;
+      font-weight: 700;
+      font-size: 72px;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      text-align: center;
+      font-style: italic;
+      font-size: 26px;
+      font-family: $serif;
+    }
+
+    div.cta {
+      margin-top: 30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    div.scroll {
+      display: none;
+      position: absolute;
+      bottom: 6px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .intro {
+    padding-top: 115px;
+
+    h1 {
+      margin-top: 0;
+      padding-top: 0;
+      text-align: left;
+      text-decoration: none;
+      text-transform: none;
+    }
+
+    p {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+  }
+
+  .product-sketches {
+    text-align: center;
+    padding: 70px 0 85px 0;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .row.collection {
+    background: #fff;
+
+    .collection-description:hover {
+      .outline {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: none;
+        padding: 20px;
+        color: #fff;
+
+        .border {
+          border: 4px solid red;
+          height: 100%;
+          width: 100%;
+
+          .insight {
+            background: white;
+            vertical-align: bottom;
+
+            h5 {
+              color: #000;
+              font-size: 48px;
+              line-height: 68px;
+              padding-bottom: 50px;
+              padding-top: 120px;
+            }
+          }
+        }
+      }
+    }
+
+    .collection-description {
+      background: #fff;
+      text-align: center;
+      padding: 100px 80px;
+      position: relative;
+
+      .outline {
+        display: none;
+      }
+
+      h4 {
+        text-align: center;
+        font-family: $sans;
+        font-size: 40px;
+        font-weight: 700;
+        font-style: none;
+        text-transform: uppercase;
+
+        span {
+          border-bottom: 6px solid black;
+          display: inline-block;
+        }
+      }
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 46px;
+        font-family: $serif;
+        text-align: center;
+        letter-spacing: -0.025em;
+      }
+    }
+
+    .home-eat {
+      background-image: url("/assets/shopify-assets/home-eat.jpg");
+      background-size: cover;
+    }
+
+    .home-drink {
+      background-image: url("/assets/shopify-assets/home-drink.jpg");
+      background-size: cover;
+    }
+
+    .home-sleep {
+      background-image: url("/assets/shopify-assets/home-sleep.jpg");
+      background-size: cover;
+    }
+
+    .home-bathe {
+      background-image: url("/assets/shopify-assets/home-bathe.jpg");
+      background-size: cover;
+    }
+
+  }
+
+  #magazine {
+    margin-bottom: 60px;
+
+    .intro {
+      min-height: 320px;
+      padding-top: 100px;
+      padding-left: 60px;
+      background: #3D3638;
+      color: white;
+
+      h4 {
+        font-style: none;
+        font-family: $serif;
+        font-weight: 700;
+        font-size: 78px;
+        text-align: left;
+      }
+
+    }
+
+    .sub-intro {
+      h5 {
+        margin-top: 80px;
+        color: black;
+        padding-left: 50px;
+        font-style: italic;
+        font-family: $serif;
+        font-weight: 100;
+        font-size: 62px;
+        text-align: left;
+      }
+
+      .cta {
+        margin-left: 50px;
+        margin-top: 50px;
+
+        a {
+          color: black;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .posts {
+      margin-top: -200px;
+    }
+
+    .post {
+      background: #fff;
+      padding: 20px 5px;
+      margin-right: 60px;
+
+      .meta {
+        padding-top: 30px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        background: none;
+        color: $graylink;
+        text-transform: uppercase;
+      }
+      h3.title {
+        font-family: $serif;
+        font-style: italic;
+        font-weight: normal;
+        text-align: left;
+        font-size: 22px;
+      }
+      div.underbar {
+        width: 40px;
+        height: 6px;
+        background: #000;
+        margin-bottom: 14px;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        width: 228px;
+        height: 273px;
+      }
+      .cta a {
+        text-transform: uppercase;
+        color: black;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  #press {
+    background: #fff;
+    padding-bottom: 60px;
+    padding-top: 80px;
+
+    .logo {
+      padding-top: 15px;
+      text-align: center;
+
+      img {
+        width: 186px;
+      }
+    }
+
+    blockquote {
+      border-left: 0;
+      text-indent: -10px;
+      max-width: 480px;
+    }
+
+    .action {
+      display: block;
+      border: 1px solid #f8f8f8;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      vertical-align: middle;
+      text-align: center;
+      color: $graylink;
+    }
+  }
+
+}
+
+/**************************************************
+ * Collections
+ * ************************************************/
+body.template-collection {
+  #hero {
+    min-height: 370px;
+    background-image: url("/assets/shopify-assets/category-eat-hero.jpg");
+    background-size: cover;
+    position: relative;
+
+    padding-top: 150px;
+
+    h2 {
+      text-align: center;
+      font-family: $sans;
+      font-weight: 700;
+      font-size: 68px;
+      color: white;
+      text-transform: uppercase;
+
+      span {
+        display: inline-block;
+        border-bottom: 6px solid white;
+      }
+    }
+  }
+
+  ul.collections {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border-bottom: 1px solid #ccc;
+
+    li {
+      display: inline-block;
+      width: 25%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      a {
+        text-transform: uppercase;
+        color: black;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .content {
+    background: white;
+    padding: 40px;
+
+    .row {
+      border-top: 1px solid #ccc;
+      padding-top: 28px;
+    }
+    .row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .product {
+      margin-bottom: 28px;
+
+      &.intro {
+        h4 {
+          font-size: 30px;
+          font-weight: 700;
+          width: 44px;
+          border-bottom: 4px solid black;
+          padding-bottom: 3px;
+          margin-bottom: 28px;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: $serif;
+          font-weight: 100;
+          max-width: 280px;
+          margin-bottom: 48px;
+        }
+      }
+
+      h5 {
+        margin: 10px 0 2px 0;
+        padding: 0;
+
+        a {
+          color: black;
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+      }
+
+      .price  {
+        font-family: $serif;
+        font-weight: 100;
+        font-size: 12px;
+      }
+    }
+
+    .product.quote {
+      display: table;
+      min-height: 290px;
+
+      blockquote {
+        padding: 0;
+        margin: 0;
+        border: none;
+        color: $red;
+        font-family: $serif;
+        font-style: italic;
+        font-size: 26px;
+        font-weight: 100;
+        height: 100%;
+        vertical-align: middle;
+        min-height: 290px;
+        text-align: center;
+        display: table-cell;
+      }
+    }
+
+    .sets {
+      h3 {
+        text-align: center;
+        width: 100%;
+        font-family: $sans;
+        font-weight: bold;
+        margin-bottom: 28px;
+      }
+      h4 {
+        text-align: center;
+        width: 100%;
+        font-family: $serif;
+        font-size: 34px;
+        line-height: 44px;
+        font-weight: bold;
+        margin-bottom: 58px;
+      }
+
+      .set {
+        border: 1px solid #ccc;
+
+        h5 {
+          text-align: center;
+          margin: 16px 0 8px;
+          font-family: $serif;
+          font-size: 22px;
+          font-weight: bold;
+        }
+
+        p {
+          min-height: 60px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .next {
+      min-height: 374px;
+      position: relative;
+
+      img {
+        position: absolute;
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 18px;
+        font-weight: 100;
+        font-family: $serif;
+        font-style: italic;
+        width: 100%;
+        text-align: center;
+        color: white;
+        top: 36%;
+      }
+      h2 {
+        top: 41%;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-family: $sans;
+        font-weight: 700;
+        font-size: 68px;
+        color: white;
+        text-transform: uppercase;
+
+        span {
+          display: inline-block;
+          border-bottom: 6px solid white;
+        }
+      }
+      .scroll {
+        position: absolute;
+        top: 72%;
+        text-align: center;
+        width: 100%;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .inset {
+    position: relative;
+
+    .callout {
+      position: absolute;
+      background: #fff;
+      text-align: center;
+      border-radius: 65px;
+
+      &.dinner-plates {
+        top: 10%;
+        left: 27%;
+        a.callout-title {
+          width: 110px;
+          height: 110px;
+        }
+      }
+
+      &.five-piece {
+        top: 60%;
+        left: 67%;
+
+        a.callout-title {
+          width: 130px;
+          height: 130px;
+        }
+      }
+
+      a.callout-title {
+        display: table-cell;
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        line-height: 16px;
+        padding: 10px;
+      }
+
+      .callout-arrow {
+        position: absolute;
+        left: 105%;
+        top: 50%;
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+
+/**************************************************
+ * Products
+ * ************************************************/
+body.template-product {
+
+  .content {
+    background: white;
+    padding: 40px;
+  }
+
+  #product-photo-container {
+    img {
+      width: 100%;
+    }
+  }
+
+  #product-photo-thumbs {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li.product-photo-thumb {
+      display: inline-block;
+      margin: 12px 12px 12px 0;
+
+      img {
+        width: 90px;
+      }
+    }
+  }
+
+  .coll-image-wrap img {
+    width: 100%;
+  }
+
+  #product-details-and-care a p {
+    color: $black;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  p.free-shipping-included {
+    margin-top: -8px;
+  }
+
+  #quantity {
+    float: left;
+    border: 2px solid black;
+    height: 56px;
+    text-align: center;
+    width: 60px;
+    margin: 0 12px 0 0;
+  }
+
+  #product-prices {
+    display: inline-block;
+    font-family: $serif;
+    font-size: 28px;
+    font-weight: 300;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  #quantity-sets {
+    font-family: $sans;
+    font-size: 14px;
+    margin-top: -4px;
+  }
+
+  #add {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 16px 0 36px 0;
+    width: 100%;
+  }
+
+  #from-snowe-to-you {
+    img {
+      width: 100px;
+      float: left;
+      padding-right: 16px;
+    }
+
+    p {
+      width: 75%;
+    }
+  }
+
+  #key-attributes {
+    border-top: 1px solid $actualgrayline;
+    margin: 36px 0;
+    padding: 36px 0;
+
+    .key-attribute {
+      text-align: center;
+      padding: 10px;
+
+      h5 {
+        font-family: $serif;
+        font-style: italic;
+        font-weight: 300; /* Book */
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -0.025px;
+        color: $actualred;
+      }
+
+    }
+  }
+
+  #tips-for-life {
+    border-top: 1px solid $actualgrayline;
+    margin: 36px 0;
+    padding: 36px 0;
+
+  }
+}
+
+
+/**************************************************
+ * Previews
+ * ************************************************/
+#shopify-theme-controls {
+  display: none !important;
+}
+
+input {
+  outline: none !important;
+  -webkit-appearance: caret;
+  -moz-appearance: caret;
+  -o-appearance: caret;
+  appearance: caret;
+}
+
+:focus {
+  outline: none
+}
+
+*, input, :before, :after, :focus {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  outline: none;
+}
+
+/* vertical alignment styles */
+
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
+/* columns of same height styles */
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+  height: 100%;
+  vertical-align: middle;
+}
+.row-same-height {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.col-xs-height {
+  vertical-align: middle;
+  display: table-cell;
+  float: none !important;
+}
