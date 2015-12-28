@@ -1,10 +1,10 @@
 # You should specify the ruby version
-ruby "2.2.1"
+ruby "2.2.3"
 
 source 'https://rubygems.org'
 
 # Standard rails, without coffee-script
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'

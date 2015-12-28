@@ -33,5 +33,16 @@ module FakeShopify
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Set the test framework to rspec
+    config.test_framework = :rspec
+
+    # Set the default encoding
+    config.encoding = "utf-8"
+
+    config.action_mailer.default_url_options = {
+      host: Rails.application.secrets.domain,
+      protocol: Rails.application.secrets.protocol
+    }
   end
 end
