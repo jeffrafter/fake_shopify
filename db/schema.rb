@@ -11,10 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151229000620) do
+ActiveRecord::Schema.define(version: 20151229204217) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "app_events", id: :bigserial, force: :cascade do |t|
+    t.integer  "app_id",     limit: 8
+    t.integer  "shop_id",    limit: 8
+    t.string   "name"
+    t.string   "domain"
+    t.string   "email"
+    t.string   "kind"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "app_links", id: :bigserial, force: :cascade do |t|
+    t.integer  "app_id",     limit: 8
+    t.string   "location"
+    t.string   "link_text"
+    t.string   "link_url"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "apps", id: :bigserial, force: :cascade do |t|
+    t.string   "name"
+    t.string   "large_icon"
+    t.string   "small_icon"
+    t.boolean  "embedded"
+    t.string   "application_url"
+    t.string   "preferences_url"
+    t.string   "support_url"
+    t.string   "redirection_url"
+    t.string   "proxy_path_prefix"
+    t.string   "proxy_sub_path"
+    t.string   "proxy_url"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "shops", id: :bigserial, force: :cascade do |t|
     t.string   "name"
