@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   scope module: :shopify do
     scope module: :shop do
       # get '/password'
-      get '/' to: 'home#index'
+      get '/', to: 'home#index'
       get '/blogs', to: 'blogs#index'
       get '/blogs/:handle', to: 'blogs#show'
       get '/blogs/:handle/tagged/:tag', to: 'blogs#tagged'
