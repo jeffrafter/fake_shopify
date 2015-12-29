@@ -19,6 +19,10 @@ the folder you should receive a notice that you need to install ruby if it is mi
 
 Once you have the code you should be able to bundle.
 
+## That placeholder font
+
+We use a really great placeholder font called [Blokk](http://blokkfont.com).
+
 ## Environment
 
 Make a `.env` file:

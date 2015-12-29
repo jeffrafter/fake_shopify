@@ -11,9 +11,56 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151229000620) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "shops", id: :bigserial, force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "domain"
+    t.string   "province"
+    t.string   "province_code",                     limit: 2
+    t.string   "country"
+    t.string   "country_code",                      limit: 2
+    t.string   "country_name"
+    t.string   "address1"
+    t.string   "zip"
+    t.string   "city"
+    t.string   "source"
+    t.string   "phone"
+    t.string   "customer_email"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.integer  "primary_location_id",               limit: 8
+    t.string   "primary_locale"
+    t.string   "currency"
+    t.string   "timezone"
+    t.string   "iana_timezone"
+    t.string   "shop_owner"
+    t.string   "money_format"
+    t.string   "money_with_currency_format"
+    t.boolean  "taxes_included"
+    t.boolean  "tax_shipping"
+    t.boolean  "county_taxes"
+    t.string   "plan_display_name"
+    t.string   "plan_name"
+    t.boolean  "has_discounts"
+    t.boolean  "has_gift_cards"
+    t.string   "myshopify_domain"
+    t.string   "google_apps_domain"
+    t.boolean  "google_apps_login_enabled"
+    t.string   "money_in_emails_format"
+    t.boolean  "eligible_for_payments"
+    t.boolean  "requires_extra_payments_agreement",           default: false
+    t.boolean  "password_enabled",                            default: true
+    t.boolean  "has_storefront",                              default: true
+    t.boolean  "setup_required",                              default: false
+    t.datetime "created_at",                                                  null: false
+    t.datetime "updated_at",                                                  null: false
+  end
+
+  add_index "shops", ["id"], name: "index_shops_on_id", using: :btree
 
 end
